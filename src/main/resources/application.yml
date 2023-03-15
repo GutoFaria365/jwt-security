@@ -1,9 +1,12 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/jwt_security
-    username: alibou
-    password: alibou
+    username: postgres
+    password: mysecretpassword
     driver-class-name: org.postgresql.Driver
+  output:
+    ansi:
+      enabled: ALWAYS
   jpa:
     hibernate:
       ddl-auto: create-drop
